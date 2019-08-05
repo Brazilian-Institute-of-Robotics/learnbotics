@@ -1,0 +1,8 @@
+prefix=/home/nozela/git/Learnbotics/devel
+
+Name: progs_modelo
+Description: Description of progs_modelo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nozela/git/Learnbotics/devel/lib 
+Requires: 

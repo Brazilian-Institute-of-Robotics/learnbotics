@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>progs_modelo</name>
+  <version>0.0.0</version>
+  <description>Pacote que contem todos os programas modelo do projeto Learnbotics</description>
+
+  <!-- MAINTAINERS -->
+  <maintainer email="nozela.leo@gmail.com">Leandro Nozela</maintainer>
+
+
+  <!-- LICENSES -->
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/progs_modelo</url> -->
+
+  <!-- DEPENDENCIES - Não é necessário mexer aqui. -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+</package>
