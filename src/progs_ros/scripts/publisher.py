@@ -12,7 +12,7 @@ def publisher():
 
     while not rospy.is_shutdown():
         i = 0
-        hello_str = "hello world_" + str(i)
+        hello_str = "Oi, estou publicando_" + str(i)
         rospy.loginfo(hello_str)
         pub.publish(hello_str)
         rate.sleep()
