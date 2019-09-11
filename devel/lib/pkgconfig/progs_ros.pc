@@ -1,0 +1,8 @@
+prefix=/home/nozela/git/Learnbotics/devel
+
+Name: progs_ros
+Description: Description of progs_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nozela/git/Learnbotics/devel/lib 
+Requires: 

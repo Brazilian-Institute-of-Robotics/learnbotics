@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "dynamixel")
 set(dynamixel_VERSION "0.0.0")
-set(dynamixel_MAINTAINER "nozela <nozela@todo.todo>")
+set(dynamixel_MAINTAINER "Leandro Nozela <nozela.leo@gmail.com>")
 set(dynamixel_PACKAGE_FORMAT "2")
 set(dynamixel_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(dynamixel_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")

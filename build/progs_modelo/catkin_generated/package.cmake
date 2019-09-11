@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "progs_modelo")
 set(progs_modelo_VERSION "0.0.0")
-set(progs_modelo_MAINTAINER "nozela <nozela@todo.todo>")
+set(progs_modelo_MAINTAINER "Leandro Nozela <nozela.leo@gmail.com>")
 set(progs_modelo_PACKAGE_FORMAT "2")
 set(progs_modelo_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(progs_modelo_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")

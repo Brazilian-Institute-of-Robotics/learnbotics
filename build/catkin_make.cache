@@ -1,2 +1,2 @@
-dynamixel:progs_modelo
+dynamixel:progs_modelo:progs_ros
 -DCATKIN_DEVEL_PREFIX=/home/nozela/git/Learnbotics/devel -DCMAKE_INSTALL_PREFIX=/home/nozela/git/Learnbotics/install -G Unix Makefiles

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>progs_modelo</name>
+  <name>dynamixel</name>
   <version>0.0.0</version>
   <description>Pacote que contem todos os arquivos necessarios para utilizacao dos Dynamixels do projeto Learnbotics</description>
 

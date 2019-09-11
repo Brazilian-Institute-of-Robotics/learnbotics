@@ -272,6 +272,9 @@ UBUNTU:BOOL=TRUE
 //LSB Distrib - codename tag
 UBUNTU_BIONIC:BOOL=TRUE
 
+//LSB Distrib - codename tag
+UBUNTU_XENIAL:BOOL=TRUE
+
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
@@ -285,10 +288,10 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //The directory containing a CMake configuration file for catkin.
-catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
+catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
-cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
 //Value Computed by CMake
 dynamixel_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/dynamixel
@@ -297,13 +300,13 @@ dynamixel_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/dynamixel
 dynamixel_SOURCE_DIR:STATIC=/home/nozela/git/Learnbotics/src/dynamixel
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/gtest/googlemock
+gmock_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/gtest
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/usr/src/googletest/googlemock
+gmock_SOURCE_DIR:STATIC=/usr/src/gmock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -318,13 +321,13 @@ googletest-distribution_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/gte
 googletest-distribution_SOURCE_DIR:STATIC=/usr/src/googletest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/gtest/googlemock/gtest
+gtest_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/gtest/gtest
 
 //Dependencies for the target
 gtest_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/usr/src/googletest/googletest
+gtest_SOURCE_DIR:STATIC=/usr/src/gtest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -346,10 +349,10 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_runtime.
-message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
+message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
 //Value Computed by CMake
 progs_modelo_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/progs_modelo
@@ -357,32 +360,38 @@ progs_modelo_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/progs_modelo
 //Value Computed by CMake
 progs_modelo_SOURCE_DIR:STATIC=/home/nozela/git/Learnbotics/src/progs_modelo
 
+//Value Computed by CMake
+progs_ros_BINARY_DIR:STATIC=/home/nozela/git/Learnbotics/build/progs_ros
+
+//Value Computed by CMake
+progs_ros_SOURCE_DIR:STATIC=/home/nozela/git/Learnbotics/src/progs_ros
+
 //The directory containing a CMake configuration file for rosconsole.
-rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
+rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
 
 //The directory containing a CMake configuration file for roscpp.
-roscpp_DIR:PATH=/opt/ros/melodic/share/roscpp/cmake
+roscpp_DIR:PATH=/opt/ros/kinetic/share/roscpp/cmake
 
 //The directory containing a CMake configuration file for roscpp_serialization.
-roscpp_serialization_DIR:PATH=/opt/ros/melodic/share/roscpp_serialization/cmake
+roscpp_serialization_DIR:PATH=/opt/ros/kinetic/share/roscpp_serialization/cmake
 
 //The directory containing a CMake configuration file for roscpp_traits.
-roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
+roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
-rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
+rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for rospy.
-rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
+rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
-rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
+rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
-std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
+std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
-xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
+xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 
 ########################
@@ -399,9 +408,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/nozela/git/Learnbotics/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=10
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=5
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -504,7 +513,7 @@ CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.10
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.5
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -536,7 +545,7 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.15()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE

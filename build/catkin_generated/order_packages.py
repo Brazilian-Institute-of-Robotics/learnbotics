@@ -2,4 +2,4 @@
 source_root_dir = "/home/nozela/git/Learnbotics/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/nozela/catkin_ws/devel;/home/nozela/ros-warthog/devel;/opt/ros/melodic".split(';') if "/home/nozela/catkin_ws/devel;/home/nozela/ros-warthog/devel;/opt/ros/melodic" != "" else []
+underlay_workspaces = "/home/nozela/git/Learnbotics/devel;/home/nozela/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/nozela/git/Learnbotics/devel;/home/nozela/catkin_ws/devel;/opt/ros/kinetic" != "" else []
