@@ -6,9 +6,7 @@ import cv2
 import numpy as np
 from std_msgs.msg import Float64
 from std_msgs.msg import String
-from sensor_msgs.msg import Image
-from dynamixel_msgs.msg import JointState
-from cv_bridge import CvBridge, CvBridgeError
+from dynamixel_msgs.msg import JointStater
 from math import pi
 
 # Classe responsável por todas as variáveis, funções e métodos usados no movimento dos motores
