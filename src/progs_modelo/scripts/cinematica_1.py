@@ -42,15 +42,12 @@ class motor_movement():
     def get_dyna2_position(self):
         return self.dyna2_position
         
-    # método responsável por especificar o que será pubicado em cada tópico
+    # método responsável por especificar o que será publicado em cada tópico
     def pub_movement(self, dyna1, dyna2):
         self.pub_dyna1.publish(dyna1)
         self.pub_dyna2.publish(dyna2)
 
-    # método responsável pelas ppublicações dos comandos para os motores
-    def movement(self):
-        # Esse comando fará as rodas darem uma volta completa, o que por sua vez fará o robô andar um pouco para frente
-        self.mm.pub_movement(2*pi,2*pi)
+
 
 def main():
 
@@ -60,9 +57,18 @@ def main():
     # Essa linha é responsável por iniciar a classe que controla os comandos de movimento do motor
     mm = motor_movement()
 
-    # Essa linha da propriamente dito o comando pro robô andar
-    mm.movement()
+    # Aqui temos o ato de passar os valores das variáveis da classe, para variáveis que podemos manipular
+    dyna1_pose = mm.get_dyna1_position()
+    dyna2_pose = mm.get_dyna2_position()
 
+    # Aqui vamos estipular que o novo comando dos motores será sempre a posição atual mais uma volta completa
+    dyna1_goal = dyna1_pose + (2*pi)
+    dyna2_goal = dyna2_pose + (2*pi)
+
+    # Essa linha da propriamente dito o comando pro robô andar
+    mm.pub_movement(dyna1_goal,dyna2_goal)
+
+    # Essa linha faz com que o programa se repita até que ctrl+c seja usado no terminal que roda o programa
     rospy.spin()
 
 if __name__ == "__main__":
