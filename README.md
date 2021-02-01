@@ -1,4 +1,5 @@
 # _Learnbotics_: Um Novo Jeito de Ensinar Robótica
+O learnbotics surgiu a partir de estudantes para estudantes. 
 ## Bem-vindo à Wiki da Learnbotics!
 Aqui você vai encontrar todos os materiais necessários para iniciar seus estudos com o Kit da Learnbotics. Nesta wiki você vai encontrar os seguintes materiais:
 * [O que é um robô](https://github.com/leo5on/Learnbotics/wiki/O-que-é-um-robô);
